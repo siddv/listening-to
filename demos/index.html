@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>ListeningTo demo</title>
+    <style>
+        body {
+            background: black;
+            margin: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="../listening-to.css"/>
+
 </head>
 <body>
 
 
 <script src="../listening-to.js"></script>
 <script>
-
-    var listeningTo = new ListeningTo('USERNAME', 'APIKEY');
-    listeningTo.getLatestSong();
+    var listeningTo = new ListeningTo({
+        user: 'username',
+        APIKey: 'apikey'
+    });
+    listeningTo.show();
 </script>
 </body>
 </html>

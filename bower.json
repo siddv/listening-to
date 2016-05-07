@@ -5,8 +5,13 @@
     "Siddharth Vadgama <siddv@hotmail.com>"
   ],
   "description": "Small component that renders an html element that shows what music you're currently listening to, using lastFM.",
-  "main": "listening-to.js",
-  "moduleType": [],
+  "main": [
+    "listening-to.js",
+    "listening-to.css"
+  ],
+  "moduleType": [
+    "globals"
+  ],
   "keywords": [
     "lastfm"
   ],
@@ -16,6 +21,7 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "demos"
   ]
 }

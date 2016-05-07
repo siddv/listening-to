@@ -1,0 +1,49 @@
+.listening-to {
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+
+    min-height: 42px;
+    min-width: 200px;
+    padding: 12px;
+
+    font-family: Helvetica, Arial, sans-serif;
+    border-radius: 5px;
+    color: #ccc;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.listening-to a {
+    color: #ccc;
+}
+
+.listening-to--dark a {
+    color: #fff;
+}
+
+.listening-to a:hover {
+    text-decoration: none;
+}
+
+
+.listening-to__listening {
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.listening-to--dark {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.listening-to__song {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.listening-to__artist {
+    font-size: 14px;
+}
+
