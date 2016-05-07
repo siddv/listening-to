@@ -51,14 +51,13 @@ function ListeningTo(config) {
                 songs = JSON.parse(songs);
 
                 var latestSong = songs.recenttracks.track[0];
-                var song = {};
 
-                song.title = latestSong.name;
-                song.artist = latestSong.artist['#text'];
-                song.link = latestSong.url;
-                song.listening = latestSong['@attr'] && latestSong['@attr'].nowplaying == true ? true : false;
-
-                resolve(song);
+                resolve({
+                    title: latestSong.name,
+                    artist: latestSong.artist['#text'],
+                    link: latestSong.url,
+                    listening: latestSong['@attr'] && latestSong['@attr'].nowplaying == 'true' ? true : false
+                });
             },
             function (err) {
                 reject(err);
@@ -73,11 +72,11 @@ function ListeningTo(config) {
     this.show = function () {
         self.getLatestSong(function (song) {
 
-            var listening = song.listening ? 'Currently listening to: ' : 'Last listened to: '
+            var listening = song.listening ? 'Currently listening to: ' : 'Last listened to: ';
 
             document.body.innerHTML +=
                 '<div class="listening-to ' + self.theme + '">' +
-                '<a href="http://www.last.fm/user/'+ self.user + '" target="_blank" class="listening-to__listening">' + listening + '</a>' +
+                '<a href="http://www.last.fm/user/' + self.user + '" target="_blank" class="listening-to__listening">' + listening + '</a>' +
                 '<a href="' + song.link + '" target="_blank" class="listening-to__song">' + song.title + '</a>' +
                 '<div class="listening-to__artist">' + song.artist + '</div>' +
                 '</div>';
