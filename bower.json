@@ -1,0 +1,21 @@
+{
+  "name": "listening-to",
+  "homepage": "https://github.com/siddv/listening-to",
+  "authors": [
+    "Siddharth Vadgama <siddv@hotmail.com>"
+  ],
+  "description": "Small component that renders an html element that shows what music you're currently listening to, using lastFM.",
+  "main": "listening-to.js",
+  "moduleType": [],
+  "keywords": [
+    "lastfm"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
