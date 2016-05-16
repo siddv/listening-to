@@ -23,5 +23,9 @@
     "test",
     "tests",
     "demos"
-  ]
+  ],
+  "devDependencies": {
+    "jasmine": "~2.4.1",
+    "jasmine-ajax": "~3.2.0"
+  }
 }
