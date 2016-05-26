@@ -22,7 +22,8 @@ Small component that renders an html element that shows what music you're curren
 ### Exposed Methods
 
 ```javascript
-   listeningTo.getLatestSong(resolve, reject);
+   // Returns promise
+   listeningTo.getLatestSong();
 ```
 Returns a promise, accepts two callbacks.
 
