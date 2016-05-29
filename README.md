@@ -25,7 +25,7 @@ Small component that renders an html element that shows what music you're curren
    // Returns promise
    listeningTo.getLatestSong();
 ```
-Returns a promise, accepts two callbacks.
+Returns a vanilla JS promise, which resolves to a song object.
 
 
 ```javascript
